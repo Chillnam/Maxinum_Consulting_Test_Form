@@ -65,6 +65,7 @@ export const Form = () => {
             name="id"
             value={formData.id}
             onChange={handleChange}
+            placeholder="Write transaction number"
           ></input>
         </li>
         <li className="form-elem">
@@ -89,6 +90,7 @@ export const Form = () => {
             name="author"
             value={formData.author}
             onChange={handleChange}
+            placeholder="Who is making operation"
           ></input>
         </li>
         <li className="form-elem">
@@ -101,6 +103,7 @@ export const Form = () => {
             name="sum"
             value={formData.sum}
             onChange={handleChange}
+            placeholder="Total amount sent"
           ></input>
         </li>
         <li className="form-elem">
@@ -128,6 +131,9 @@ export const Form = () => {
             name="comment"
             value={formData.comment}
             onChange={handleChange}
+            placeholder="Add comment or description to the operation"
+            rows={4}
+            cols={30}
           ></textarea>
         </li>
       </ul>
